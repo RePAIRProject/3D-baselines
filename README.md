@@ -9,7 +9,7 @@ We used **five state-of-the-art learning-based shape assembly methods**:
 5. DiffAssemble [3]
 
 ## Run code
-This following code can be used to train the baselines
+The following code can be used to train the baselines
 
 ### Global
 ```
