@@ -38,7 +38,7 @@ python train.py --cfg_file configs/vnn/vnn-everyday.py
 ### DiffAssemble
 ```
 cd Positional_Puzzle_RePAIR-withoutPivot
-python scripts/train.py --cfg_file configs/global/global-32x1-cosine_200e-everyday.py
+python puzzle_diff/train_3d.py --inference_ratio 10 --sampling DDIM --gpus 1 --max_epochs 500 --batch_size 1 --steps 600 --num_workers 12 --noise_weight 0 --predict_xstart True --backbone vn_dgcnn --max_num_part 44 --category all 
 ```
 
 
