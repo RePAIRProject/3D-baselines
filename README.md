@@ -9,18 +9,37 @@ We used **five state-of-the-art learning-based shape assembly methods**:
 5. DiffAssemble [3]
 
 ## Run code
-This following code can be used to train the different methods
+This following code can be used to train the baselines
 
 ### Global
+```
+cd multi_part_assembly-withoutPivot
+python scripts/train.py --cfg_file configs/global/global-32x1-cosine_200e-everyday.py
+```
 
 ### LSTM
+```
+cd multi_part_assembly-withoutPivot
+python scripts/train.py --cfg_file configs/lstm/lstm-32x1-cosine_200e-everyday.py
+```
 
 ### DGL
+```
+cd multi_part_assembly-withoutPivot
+python scripts/train.py --cfg_file configs/dgl/dgl-32x1-cosine_200e-everyday.py```
+```
 
 ### SE(3)-Equiv.
+```
+Leveraging-SE-3-Equivariance-for-Learning-3D-Geometric-Shape-Assembly-withoutPivot
+python train.py --cfg_file configs/vnn/vnn-everyday.py
+```
 
 ### DiffAssemble
-
+```
+cd Positional_Puzzle_RePAIR-withoutPivot
+python scripts/train.py --cfg_file configs/global/global-32x1-cosine_200e-everyday.py
+```
 
 
 ## References
