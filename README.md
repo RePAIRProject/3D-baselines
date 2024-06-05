@@ -1,4 +1,4 @@
-This repository contains the official implementation for the benchmark used in the paper *Re-assembling the past: The RePAIR dataset and
+This repository contains the official implementation of the baselines used in the paper *Re-assembling the past: The RePAIR dataset and
 benchmark for real world 2D and 3D puzzle solving*.
 
 We used **five state-of-the-art learning-based shape assembly methods**:
