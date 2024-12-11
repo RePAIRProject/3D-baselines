@@ -26,7 +26,7 @@ python scripts/train.py --cfg_file configs/lstm/lstm-32x1-cosine_200e-everyday.p
 ### DGL
 ```
 cd multi_part_assembly-withoutPivot
-python scripts/train.py --cfg_file configs/dgl/dgl-32x1-cosine_200e-everyday.py```
+python scripts/train.py --cfg_file configs/dgl/dgl-32x1-cosine_200e-everyday.py
 ```
 
 ### SE(3)-Equiv.
@@ -60,7 +60,7 @@ python test.py --cfg_file configs/lstm/lstm-32x1-cosine_200e-everyday.py --weigh
 ### DGL
 ```
 cd multi_part_assembly-withoutPivot
-python test.py --cfg_file configs/dgl/dgl-32x1-cosine_200e-everyday.py --weight /path/last.ckpt```
+python test.py --cfg_file configs/dgl/dgl-32x1-cosine_200e-everyday.py --weight /path/last.ckpt
 ```
 
 ### SE(3)-Equiv.
