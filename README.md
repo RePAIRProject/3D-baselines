@@ -8,7 +8,7 @@ We used **five state-of-the-art learning-based shape assembly methods**:
 4. SE(3)-Equiv. [2]
 5. DiffAssemble [3]
 
-## Run code
+## Train
 The following code can be used to train the baselines
 
 ### Global
@@ -39,6 +39,40 @@ python train.py --cfg_file configs/vnn/vnn-everyday.py
 ```
 cd Positional_Puzzle_RePAIR-withoutPivot
 python puzzle_diff/train_3d.py --inference_ratio 10 --sampling DDIM --gpus 1 --max_epochs 500 --batch_size 1 --steps 600 --num_workers 12 --noise_weight 0 --predict_xstart True --backbone vn_dgcnn --max_num_part 44 --category all 
+```
+
+
+## Test
+The following code can be used to test the baselines
+
+### Global
+```
+cd multi_part_assembly-withoutPivot/
+python test.py --cfg_file configs/global/global-32x1-cosine_200e-everyday.py --weight /path/last.ckpt
+```
+
+### LSTM
+```
+cd multi_part_assembly-withoutPivot
+python test.py --cfg_file configs/lstm/lstm-32x1-cosine_200e-everyday.py --weight /path/last.ckpt
+```
+
+### DGL
+```
+cd multi_part_assembly-withoutPivot
+python test.py --cfg_file configs/dgl/dgl-32x1-cosine_200e-everyday.py --weight /path/last.ckpt```
+```
+
+### SE(3)-Equiv.
+```
+cd Leveraging-SE-3-Equivariance-for-Learning-3D-Geometric-Shape-Assembly-withoutPivot/BreakingBad/
+python test.py --cfg_file configs/vnn/vnn-everyday.py --weight /path/last.ckpt
+```
+
+### DiffAssemble
+```
+cd Positional_Puzzle_RePAIR-withoutPivot
+python puzzle_diff/train_3d.py --inference_ratio 10 --batch_size 1 --steps 600 --num_workers 8 --noise_weight 0 --predict_xstart True  --max_epochs 500 --backbone vn_dgcnn --max_num_part 44 --evaluate True --checkpoint_path /path/last.ckpt --adjth 0.5 
 ```
 
 
