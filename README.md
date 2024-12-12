@@ -1,7 +1,8 @@
 # 3D Baselines for the RePAIR Dataset
 
-This repository contains the official implementation of the baselines used in the paper *Re-assembling the past: The RePAIR dataset and
-benchmark for real world 2D and 3D puzzle solving*.
+This repository contains the official implementation of the baselines used in the paper [*Re-assembling the past: The RePAIR dataset and benchmark for real world 2D and 3D puzzle solving*](https://openreview.net/pdf?id=fgJ9OvJPZB).
+
+The dataset is available [in Zenodo](https://zenodo.org/records/13993089).
 
 We used **five state-of-the-art learning-based shape assembly methods**:
 1. Global [1]
