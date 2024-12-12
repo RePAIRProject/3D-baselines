@@ -1,3 +1,5 @@
+# 3D Baselines for the RePAIR Dataset
+
 This repository contains the official implementation of the baselines used in the paper *Re-assembling the past: The RePAIR dataset and
 benchmark for real world 2D and 3D puzzle solving*.
 
@@ -74,7 +76,28 @@ python test.py --cfg_file configs/vnn/vnn-everyday.py --weight /path/last.ckpt
 cd Positional_Puzzle_RePAIR-withoutPivot
 python puzzle_diff/train_3d.py --inference_ratio 10 --batch_size 1 --steps 600 --num_workers 8 --noise_weight 0 --predict_xstart True  --max_epochs 500 --backbone vn_dgcnn --max_num_part 44 --evaluate True --checkpoint_path /path/last.ckpt --adjth 0.5 
 ```
+---
 
+## Acknowledgements
+
+This project has received funding from the European Union’s Horizon 2020 research and innovation programme under grant agreement No 964854
+
+---
+
+## Citation
+
+If you use this code in your research, please cite the following paper:
+
+```
+@inproceedings{repair2024,
+title={Re-assembling the Past: The RePAIR Dataset and Benchmark for Realistic 2D and 3D Puzzle Solving},
+author={Tsesmelis, Theodore and Palmieri, Luca and Khoroshiltseva, Marina and Islam, Adeela and Elkin, Gur and Shahar, Ofir Itzhak and Scarpellini, Gianluca and Fiorini, Stefano and Ohayon, Yaniv and Alal, Nadav and Aslan, Sinem and Moretti, Pietro and Vascon, Sebastiano and Gravina, Elena and Napolitano, Maria Cristina and Scarpati, Giuseppe and Zuchtriegel, Gabriel and Spühler, Alexandra and Fuchs, Michel E. and James, Stuart and Ben-Shahar, Ohad and Pelillo, Marcello and Del Bue, Alessio},
+booktitle={NeurIPS},
+year={2024}
+}
+```
+
+---
 
 ## References
 <a id="1">[1]</a> 
