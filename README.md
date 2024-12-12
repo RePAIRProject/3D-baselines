@@ -86,7 +86,7 @@ python puzzle_diff/train_3d.py --inference_ratio 10 --sampling DDIM --gpus 1 --m
 - `--gpus`: Indicates the number of GPUs to use for training.
 - `--max_epochs`: Sets the maximum number of epochs for training.
 - `--batch_size`: Specifies the number of samples per batch during training.
-- `--steps`: Pndicates the number of diffusion steps.
+- `--steps`: Indicates the number of diffusion steps.
 - `--num_workers`: Specifies the number of worker threads to use for data loading.
 - `--noise_weight`: Sets the weight of the noise added during training.
 - `--predict_xstart`: A boolean flag indicating whether the model should predict the initial latent variable directly in diffusion processes. 
